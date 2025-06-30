@@ -1,0 +1,29 @@
+{
+  "name": "book-api",
+  "version": "1.0.0",
+  "main": "dist/src/functions/books/*.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet\" && exit 0",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:studio": "prisma studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "@prisma/client": "^6.10.1",
+    "prisma": "^6.10.1"
+  }
+}
