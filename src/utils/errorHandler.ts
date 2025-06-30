@@ -25,3 +25,5 @@ export function errorHandler(error: unknown): HttpResponseInit {
 
   return response;
 }
+
+// adding a comment to ensure the file is not empty
